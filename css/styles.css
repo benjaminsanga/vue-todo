@@ -1,0 +1,103 @@
+/* IMPORT UBUNTU FONT */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+#container {
+	width: 40%;
+	margin: auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+@media (max-width:  960px) {
+	#container {
+		width: 50%;
+	}
+}
+
+form {
+	box-shadow: 0rem 3px 15px 0.321rem lightgrey;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h2.myHeader {
+    text-align: center;
+    font-size: xx-large;
+    color: lightslategray;
+}
+
+label {
+	display: block;
+	color: darkslategray;
+	font-size: 1.2em;
+}
+
+label, button {
+	margin-top: 1rem;
+	margin-bottom: 5px;
+}
+
+input[type='text'], input[type='email'], select {
+	width: 80%;
+	/*border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;*/
+	border: 3px solid ghostwhite;
+	padding: 10px 5px;
+	display: block;
+	font-size: 16px;
+	color: lightslategray;
+}
+.save-search {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 50%;
+}
+
+input + span  {
+	color: lightslategray;
+	font-style: italic;
+}
+
+button {
+	background-color: teal;
+	color: #fff;
+	width: 80%;
+	font-size: 1.2rem;
+	border: none;
+	padding: 1.34rem 0.54rem;
+  	margin: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about img {
+    margin: 0px 10px;
+}
+.about a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+img {
+	width: 50px;
+	height: relative;
+	border-radius: 50%;
+}
