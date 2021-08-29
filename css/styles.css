@@ -8,7 +8,7 @@
 	box-sizing: content-box;
 }
 
-#container {
+.container {
 	width: 40%;
 	margin: auto;
 	margin-top: 2rem;
@@ -16,7 +16,7 @@
 }
 
 @media (max-width:  960px) {
-	#container {
+	.container {
 		width: 50%;
 	}
 }
@@ -32,9 +32,15 @@ form {
 	align-items: center;
 }
 
-h2.myHeader {
+h2.header {
     text-align: center;
     font-size: xx-large;
+    color: lightslategray;
+}
+
+h3.header {
+    text-align: center;
+    font-size: x-large;
     color: lightslategray;
 }
 
@@ -49,7 +55,7 @@ label, button {
 	margin-bottom: 5px;
 }
 
-input[type='text'], input[type='email'], select {
+input {
 	width: 80%;
 	/*border-top: transparent;
 	border-left: transparent;
@@ -60,6 +66,11 @@ input[type='text'], input[type='email'], select {
 	font-size: 16px;
 	color: lightslategray;
 }
+
+input:focus {
+	border: 3px solid lightslategray;
+}
+
 .save-search {
     display: flex;
     justify-content: space-evenly;
@@ -87,6 +98,7 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+	    margin: 3rem 0;
 }
 .about img {
     margin: 0px 10px;
@@ -98,6 +110,5 @@ button {
 
 img {
 	width: 50px;
-	height: relative;
 	border-radius: 50%;
 }
